@@ -1,0 +1,11 @@
+<%= form_for @tweet, url: {action:obj} do |f| %>
+
+  <%= f.label :author, "Author:" %>
+  <%= f.text_field :author %>
+
+  <%= f.label :body, "Enter Tweet Here:" %>
+  <%= f.text_field :body %>
+
+<%= f.submit %>
+
+<% end %>
